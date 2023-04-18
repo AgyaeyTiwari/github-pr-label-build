@@ -2,35 +2,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.jenkins-ci.plugins</groupId>
+        <groupId>io.jenkins.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.10</version>
+        <version>4.52</version>
         <relativePath />
     </parent>
     <artifactId>github-pr-label-build</artifactId>
     <version>${changelist}</version>
     <packaging>hpi</packaging>
     <name>GitHub PR Label Build Plugin</name>
-    <url>https://git.corp.adobe.com/agtiwari/${project.artifactId}-plugin</url>
-    <description>Allows rebuilds of multibranch PR jobs based on GitHub PR comments.</description>
+    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <description>Allows to trigger build of multibranch PR jobs based on GitHub PR labels.</description>
     <licenses>
         <license>
             <name>MIT</name>
             <url>http://opensource.org/licenses/MIT</url>
         </license>
     </licenses>
-
     <properties>
         <changelist>999999-SNAPSHOT</changelist>
-        <gitHubRepo>agtiwari/github-pr-comment-build-plugin</gitHubRepo>
-        <jenkins.version>2.176.4</jenkins.version>
+        <gitHubRepo>jenkinsci/github-pr-label-build-plugin</gitHubRepo>
+        <jenkins.version>2.361.4</jenkins.version>
         <java.level>8</java.level>
     </properties>
-
     <scm>
-        <connection>scm:git:git://git.corp.adobe.com/${gitHubRepo}.git</connection>
-        <developerConnection>scm:git:git@git.corp.adobe.com:${gitHubRepo}.git</developerConnection>
-        <url>https://git.corp.adobe.com/${gitHubRepo}</url>
+        <connection>scm:git:git://github.com/${gitHubRepo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
+        <url>https://github.com/${gitHubRepo}</url>
         <tag>${scmTag}</tag>
     </scm>
     <dependencies>
