@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.jenkins-ci.plugins</groupId>
+        <groupId>io.jenkins.plugins</groupId>
         <artifactId>plugin</artifactId>
         <version>4.52</version>
         <relativePath />
@@ -26,8 +26,8 @@
         <java.level>8</java.level>
     </properties>
     <scm>
-        <connection>scm:git://github.com/${gitHubRepo}.git</connection>
-        <developerConnection>scm:git@github.com:${gitHubRepo}.git</developerConnection>
+        <connection>scm:git:https://github.com/${gitHubRepo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
         <url>https://github.com/${gitHubRepo}</url>
         <tag>${scmTag}</tag>
     </scm>
